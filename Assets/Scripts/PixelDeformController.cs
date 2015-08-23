@@ -28,7 +28,8 @@ public class PixelDeformController : MonoBehaviour {
 
 
 	public void addExplosion(Vector3 pos) {
-		//recreate explosionLocations[] and add one element each time this function is run. then use the array for updating RenderPixelBox(). maybe put a function inside the if(insidecircle) to test for all the circles
+		//recreate explosionLocations[] and add one element each time this function is run.
+		//then use the array for updating RenderPixelBox(). maybe put a function inside the if(insidecircle) to test for all the circles
 		//explosionLocations.Add(pos);
 		Vector2[] tempArr = new Vector2[explosionLocations.Length];
 		explosionLocations.CopyTo(tempArr, 0);
